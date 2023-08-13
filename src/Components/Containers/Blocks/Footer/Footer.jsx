@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { BsFacebook, BsInstagram, BsTwitter } from 'react-icons/bs'
 import { FaGlobeAmericas } from 'react-icons/fa'
 import { GiRotaryPhone } from 'react-icons/gi'
 import { AiOutlineMail } from 'react-icons/ai'
+import logo from "../../../../Media/Images/logo_ingecables.png";
 
 const Footer = () => {
+    const [year, setYear] = useState(new Date().getFullYear())    
   return (
     <>
         <div className="col-12">
@@ -15,13 +17,15 @@ const Footer = () => {
                 <div className="col-md-4 col-sm-12 align-items-center bg-light" style={{ borderRight: "solid 1px rgba(0, 0, 20, 0.2)" }}>
                     <span className="d-flex justify-content-center align-items-center w-100  flex-column h-100 p-2">
                         <span className='w-100 d-flex justify-content-center shadow shadow-2 mb-0 '>
-                            <h3 className='text-dark w-100 text-center rounded p-3 mb-0 border border-bottom'>Ingecables S.A.</h3>
+                            <h3 className='text-dark w-100 text-center rounded p-3 mb-0 border border-bottom'>
+                                <img src={logo} alt="" className='w-75' />
+                            </h3>
                         </span>
                         <hr className='border border-2 border-bottom border-secondary w-100' />
-                        <span className='d-flex justify-content-around bg-light text-dark w-100 p-3 shadow border border-bottom shadow-3 rounded '>
-                            <BsTwitter className='border border-bottom border-2 shadow shadow-1 rounded p-1 fs-1'/>
-                            <BsInstagram className='border border-bottom border-2 shadow shadow-1 rounded p-1 fs-1'/>
-                            <BsFacebook className='border border-bottom border-2 shadow shadow-1 rounded p-1 fs-1'/>
+                        <span className='d-flex justify-content-around bg-primary text-dark w-100 p-3 shadow border border-bottom shadow-3 rounded '>
+                            <BsTwitter className='bg-light border border-bottom border-2 shadow shadow-1 rounded p-1 fs-1'/>
+                            <BsInstagram className='bg-light border border-bottom border-2 shadow shadow-1 rounded p-1 fs-1'/>
+                            <BsFacebook className='bg-light border border-bottom border-2 shadow shadow-1 rounded p-1 fs-1'/>
                         </span>
                     </span>
                 </div>
@@ -37,19 +41,21 @@ const Footer = () => {
                             </span>
                             <hr className='border border-dark m-1 w-100'/>
                             <span className='border border-bottom rounded w-100 p-2 bg-light text-light my-2 shadow shadow-2'>
-                                <span className='d-flex justify-content-start px-3 align-items-center bg-orange'>
-                                    <AiOutlineMail />. ventas@ingecables.com
+                                <span className='d-flex justify-content-center px-3 align-items-center bg-orange'>
+                                    <span>
+                                        <AiOutlineMail /> ventas@ingecables.com
+                                    </span>
                                 </span>
-                                <span  className='d-flex justify-content-start px-3 align-items-center bg-orange'>
-                                    <AiOutlineMail />. ingecables@hotmail.com
+                                <span  className='d-flex justify-content-center px-3 align-items-center bg-orange'>
+                                    <AiOutlineMail /> ingecables@hotmail.com
                                 </span>
                             </span>
                             <span className='border border-bottom rounded w-100 p-2 text-light my-2 shadow shadow-2 bg-light'>
-                                <span className='d-flex justify-content-start px-3 align-items-center bg-orange'>
-                                    <GiRotaryPhone />. +593 2 2257589
+                                <span className='d-flex justify-content-center px-3 align-items-center bg-orange'>
+                                    <GiRotaryPhone /> +593 2 2257589
                                 </span>
-                                <span className='d-flex justify-content-start px-3 align-items-center bg-orange'>
-                                    <GiRotaryPhone />. +593 2 2244391
+                                <span className='d-flex justify-content-center px-3 align-items-center bg-orange'>
+                                    <GiRotaryPhone /> +593 2 2244391
                                 </span>
                             </span>
                         </span>
@@ -58,7 +64,7 @@ const Footer = () => {
             </section>
 
             <section className="container-fluid mt-3 bg-primary text-light p-3 rounded">
-                    Ingecables S.A © 2023 - Desarrollado por:
+                    Ingecables S.A © {year} - Desarrollado por:
                 . <span className='text-warning'>
                     Zultech
                 </span>
