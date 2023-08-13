@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Cables de acero",
+        "endpoint": "/index",
+        "image": "img/cablesacero.jpg"
+    },
+    {
+        "name": "Cadenas",
+        "endpoint": "/index",
+        "image": "img/cadenas-acero.webp"
+    },
+    {
+        "name": "Accesorios",
+        "endpoint": "/grilletes",
+        "image": "img/ACCESORIOS.jpg"
+    },
+    {
+        "name": "Mangueras hidráulicas",
+        "endpoint": "/ganchos",
+        "image": "img/mnguerash.jpg"
+    },
+    {
+        "name": "Productos de seguridad",
+        "endpoint": "/cancamos",
+        "image": "img/seguridad.jpg"
+    },
+    {
+        "name": "Pernos especiales",
+        "endpoint": "/accesorios",
+        "image": "img/pern.png"
+    }
+]

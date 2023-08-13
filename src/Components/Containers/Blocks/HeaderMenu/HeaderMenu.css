@@ -1,0 +1,36 @@
+.option-active-page{
+    border-bottom: rgb(13, 110, 253) .51rem solid;
+    font-weight: bold;
+    color: rgb(46, 46, 102);
+}
+.option-inactive-page{
+    color: black;
+    border-bottom: transparent .51rem solid;
+}
+
+.link-active{
+    color: rgb(13, 110, 253);
+    border-right: 1px solid rgba(103, 164, 255, .3);
+    border-left: 1px solid rgba(84, 152, 255, .3);
+    transition: all ease-in .13s;
+}
+.link-inactive{
+    transition: all ease-in .13s;
+    color: rgb(5, 5, 145);
+}
+
+.link-active:hover{
+    color: white;
+    background-color: rgb(13, 110, 253);
+}
+.link-inactive:hover{
+    color: white;
+    background-color: rgb(13, 110, 253);
+}
+.header-menu{
+    position: sticky;
+    top: 0;
+}
+/*
+    https://www.youtube.com/watch?v=1ukG4FTmdWQ
+*/

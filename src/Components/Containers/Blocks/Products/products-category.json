@@ -1,0 +1,37 @@
+[
+    {
+        "name": "cancamos",
+        "endpoint": "/cancamos",
+        "image": "/SujetacablesG-450.jpg"
+    },
+    {
+        "name": "CABLES",
+        "endpoint": "/index",
+        "image": "/GanchosegS-1316.jpg"
+    },
+    {
+        "name": "Accesorios",
+        "endpoint": "/accesorios",
+        "image": "/falsasmallasG-pera.jpg"
+    },
+    {
+        "name": "Accesorios",
+        "endpoint": "/accesorios",
+        "image": "/falsasmallasG-pera.jpg"
+    },
+    {
+        "name": "Accesorios",
+        "endpoint": "/accesorios",
+        "image": "/falsasmallasG-pera.jpg"
+    },
+    {
+        "name": "Accesorios",
+        "endpoint": "/accesorios",
+        "image": "/falsasmallasG-pera.jpg"
+    },
+    {
+        "name": "Accesorios",
+        "endpoint": "/accesorios",
+        "image": "/falsasmallasG-pera.jpg"
+    }
+]

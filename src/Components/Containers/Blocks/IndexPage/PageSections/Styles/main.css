@@ -1,0 +1,6 @@
+.grid-container{
+    background-color: red;
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+}

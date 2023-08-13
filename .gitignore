@@ -11,6 +11,9 @@
 # production
 /build
 
+# Special tools
+/Tools/UserData.js
+
 # misc
 .DS_Store
 .env.local

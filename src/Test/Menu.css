@@ -1,0 +1,58 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    transition: left 0.3s ease-in-out;
+  }
+  
+  .menu.open {
+    left: 0;
+  }
+  
+  .menu-toggle {
+    display: none;
+    padding: 20px;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+  }
+  
+  .menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 50px 0;
+  }
+  
+  .menu-list li {
+    padding: 10px 20px;
+  }
+  
+  .menu-list li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+  }
+  
+  @media (max-width: 768px) {
+    .menu {
+      left: -100%;
+    }
+  
+    .menu.open {
+      left: 0;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  }
+  

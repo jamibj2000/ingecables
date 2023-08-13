@@ -1,24 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import Card from './Components/Containers/Boxes/Card';
+import MainBlock from './Components/Containers/Blocks/MainBlock';
+import API from "./Tools/Axios.js";
+import PageRouter from './Pages/PageRouter';
+import Menu from './Test/Menu';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    {/* <DataProvider>
+      <div>
+        <DataImporter />
+        <DataTable />
+      </div>
+    </DataProvider> */}
+
+      <PageRouter></PageRouter>
+      {/* <MainBlock /> */}
+    </>
   );
 }
 
