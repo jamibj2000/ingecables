@@ -3,10 +3,17 @@ import HeroSlider, { Overlay, Slide, MenuNav } from "hero-slider";
 // import Title from "./CarouselleComponents/Title/Index";
 // import Subtitle from "./CarouselleComponents/Subtitle/Index";
 
-const bogliasco = "https://i.imgur.com/Gu5Cznz.jpg";
-const countyClare = "https://i.imgur.com/idjXzVQ.jpg";
-const craterRock = "https://i.imgur.com/8DYumaY.jpg";
-const giauPass = "https://i.imgur.com/8IuucQZ.jpg";
+import bogliasco from "./Images/c5dbbf60596666f3e5f3636be3b8d8d5.emcocables-slider-3.webp";
+import countyClare from "./Images/cz05100-01-thumbnail-1080x1080-70.jpg";
+import craterRock from "./Images/galvanizado.jpg";
+import giauPass from "./Images/ACCESORIOS.jpg";
+import ingecables from "./Images/ACCESORIOS.jpg";
+
+// const bogliasco = "https://i.imgur.com/Gu5Cznz.jpg";
+// const countyClare = "https://i.imgur.com/idjXzVQ.jpg";
+// const craterRock = "https://i.imgur.com/8DYumaY.jpg";
+// const giauPass = "https://i.imgur.com/8IuucQZ.jpg";
+// const ingecables = "https://i.imgur.com/8IuucQZ.jpg";
 
 export default function Carouselle() {
   return (
@@ -59,6 +66,14 @@ export default function Carouselle() {
         label=""
         background={{
           backgroundImageSrc: countyClare
+        }}
+      />
+
+      <Slide
+        shouldRenderMask
+        label=""
+        background={{
+          backgroundImageSrc: ingecables
         }}
       />
 

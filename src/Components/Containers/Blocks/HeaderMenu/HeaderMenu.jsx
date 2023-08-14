@@ -77,14 +77,13 @@ const HeaderMenu = () => {
         {
             activeContact ? (<ModalPanel handleContact={handleContact} contactData={contactData} />) : (<></>)
         }
-        <div className='col-5 ' >
-            <div className="row">
-                <div className="col-8 d-flex justify-content-start p-2">
-                    <Link to="/" className='w-100 m-0 p-2'>
+        <div className='logo-container d-flex' >
+                <div className="w-100 d-flex justify-content-center p-2">
+                    <Link to="/" className='text-center w-100 m-0 p-2'>
                         <img className="" src={logo} width="85%" alt=""/>
                     </Link>
                 </div>
-                <div className="col-4 d-flex text-center align-items-center fw-bold" style={{ width: "50% !important", fontPosition: "14px" }}>
+                <div className="d-flex text-center justify-content-center align-items-center fw-bold" style={{ width: "50% !important", fontPosition: "14px" }}>
                     <div className="bg-light shadow shadow-2 border border-1 px-2 py-1">
                         <div className=' d-flex justify-content-around align-items-center'>
                             <div className=" p-1 d-flex justify-content-center align-items-center">
@@ -103,12 +102,11 @@ const HeaderMenu = () => {
                             </div>
                         </div>
                     </div>
-                </div >
             </div >        
         </div>
-        <div className='col-7'>
-            <div className='row h-100 '>
-                <div className="col-12 d-flex align-items-center justify-content-around">
+        <div className='menu-container d-flex'>
+            <div className='w-100 d-flex h-100'>
+                <div className="w-100 d-flex align-items-center justify-content-around">
                    {
                     menuButtonsData.map( (buttonData, index) =>
                         <section key={index} className={ currentPage === buttonData.endpoint ? optionActive : optionInactive } style={{ width: "20%" }}>

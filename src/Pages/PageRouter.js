@@ -17,9 +17,9 @@ const PageRouter = () => {
   return (
     <>
       <PageProvider>
-        <RowContainer className="my-2 position-sticky bg-light shadow shadow-1" style={{ top: "0", zIndex: "9" }}>
+        <div className="d-flex my-2 position-sticky bg-light shadow shadow-1" style={{ top: "0", zIndex: "9" }}>
             <HeaderMenu />
-        </RowContainer>
+        </div>
           <Routes>
             <Route path="/" element={<MainPage />} />
             <Route path="/catalogo" element={<Catalogue />} />

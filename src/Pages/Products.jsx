@@ -4,7 +4,9 @@ import React, { useEffect, useState } from 'react'
 import Loader from "../Tools/Loader";
 import data from './Data/Tables';
 import { useParams, useNavigate } from "react-router-dom";
+import "./products.css";
 const API_URL = "https://jamjack.online/ingecables"
+
 
 const Products = () => {
     const { rutaesp } = useParams()
@@ -33,7 +35,7 @@ const Products = () => {
                     return e.target.className === "panel" ? showProductCard("", false) : ""
                 }
             }  className="panel">
-                    <section className="d-flex flex-column p-3 rounded shadow shadow-4 justify-content-center align-items-center w-60 bg-danger">
+                    <section className="info-products-section d-flex flex-column p-3 rounded shadow shadow-4 justify-content-center align-items-center bg-danger">
                         <span className="d-flex w-100 bg-light justify-content-center align-items-center rounded">
                             <h1>
                                 CARDA-INCCIO

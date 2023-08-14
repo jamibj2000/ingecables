@@ -31,6 +31,38 @@
     position: sticky;
     top: 0;
 }
+
+.logo-container{
+    width: 40%;
+    
+}
+.menu-container{
+    width: 60%;
+}
+
+@media (min-width: 300px) {
+    .info-section{
+        width: 90%;
+    }
+}
+
+@media (min-width: 600px) {
+    .info-section{
+        width: 75%;
+    }
+}
+
+@media (min-width: 800px) {
+    .info-section{
+        width: 65%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .info-section{
+        width: 60%;
+    }
+}
 /*
     https://www.youtube.com/watch?v=1ukG4FTmdWQ
 */

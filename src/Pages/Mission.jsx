@@ -54,7 +54,7 @@ const Mission = () => {
               return e.target.className === "panel" ? showValuesCard("", false) : ""
           }
       }  className="panel">
-              <section className="d-flex flex-column p-3 rounded shadow shadow-4 justify-content-center align-items-center w-60 h-60 bg-light">
+              <section className="info-section d-flex flex-column p-3 rounded shadow shadow-4 justify-content-center align-items-center  h-60 bg-light">
                   <span className="bg-primary row h-75 w-100 my-2 p-1 rounded justify-content-center align-items-center" style={{ maxHeight: "500px"}}>
                     <div className="fs-4 border border-2 h-100 rounded overflow-auto text-light p-3" style={{ height: "200px" }}>
                       {cardsContent[content].description}
@@ -66,7 +66,7 @@ const Mission = () => {
                   <button className="shadow shadow-2 btn btn-warning rounded w-25 mt-2" onClick={()=> showValuesCard("", false)}>CERRAR</button>
               </section>
           </div>)}
-        <div className="row profile-card-container justify-content-around bg-light m-0">
+        <div className="row profile-card-container justify-content-around bg-light p-1 m-0">
           <div className="col-md-3 col-sm-12 profile-card my-5 shadow shadow-lg">
               <div className="profile-circle">
                   <img src={LogoH} alt="" />

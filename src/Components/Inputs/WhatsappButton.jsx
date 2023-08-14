@@ -9,8 +9,8 @@ const WhatsappButton = () => {
   return (
     <>
         <div className="floating-icon d-flex justify-content-center align-items-center">
-            <div onClick={handleIconClick} className=" d-flex justify-content-center align-items-center">
-                <img src={ws2} width="80px" alt="" />
+            <div onClick={handleIconClick} className="image-container d-flex justify-content-center align-items-center">
+                <img src={ws2} width="100%" alt="" />
             </div>
         </div>
     </>
