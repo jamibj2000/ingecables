@@ -11,22 +11,47 @@
     },
     {
         "name": "Accesorios",
-        "endpoint": "/grilletes",
+        "endpoint": "/accesorios",
         "image": "img/ACCESORIOS.jpg"
     },
     {
         "name": "Mangueras hidráulicas",
-        "endpoint": "/ganchos",
+        "endpoint": "/mangueras",
         "image": "img/mnguerash.jpg"
     },
     {
         "name": "Productos de seguridad",
-        "endpoint": "/cancamos",
+        "endpoint": "/seguridad",
         "image": "img/seguridad.jpg"
     },
     {
         "name": "Pernos especiales",
-        "endpoint": "/accesorios",
+        "endpoint": "/pernos",
         "image": "img/pern.png"
+    },
+    {
+        "name": "Tecles",
+        "endpoint": "/tecles",
+        "image": "img/tecle-electrico.jpg"
+    },
+    {
+        "name": "Eslingas",
+        "endpoint": "/eslingas",
+        "image": "img/eslingas-poliester-csbeaver.jpg"
+    },
+    {
+        "name": "Pastecas",
+        "endpoint": "/pastecas",
+        "image": "img/PastecasSerie900.jpg"
+    },
+    {
+        "name": "Templadores",
+        "endpoint": "/templador",
+        "image": "img/Templadorcableacero.jpg"
+    },
+    {
+        "name": "Terminales",
+        "endpoint": "/terminales",
+        "image": "img/TerminalCrosbyG-416.jpg"
     }
 ]

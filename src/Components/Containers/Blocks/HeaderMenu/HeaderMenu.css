@@ -1,3 +1,25 @@
+.d-responsive{
+    display: flex;
+}
+.d-mob-responsive{
+    display: flex;
+    position: fixed;
+    inset: 0;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.807);
+    backdrop-filter: blur(4px);
+    z-index: 9;
+}
+.burger-menu{
+    display: none;
+}
+.flex-div{
+    flex-direction: row;
+}
+.inge-logo{
+    width: 85%;
+}
+
 .option-active-page{
     border-bottom: rgb(13, 110, 253) .51rem solid;
     font-weight: bold;
@@ -6,6 +28,9 @@
 .option-inactive-page{
     color: black;
     border-bottom: transparent .51rem solid;
+}
+.close-button{
+    display: none;
 }
 
 .link-active{
@@ -32,9 +57,9 @@
     top: 0;
 }
 
+
 .logo-container{
-    width: 40%;
-    
+    width: 40%;    
 }
 .menu-container{
     width: 60%;
@@ -44,11 +69,48 @@
     .info-section{
         width: 90%;
     }
+    .logo-container{
+        width: 85%;
+    }
+    .menu-container{
+        width: 15%;
+    }
+    .d-responsive{
+        position: fixed;
+        display: none;
+        inset: 0;
+    }
+    .burger-menu{
+        display: flex;
+    }
+    .inge-logo{
+        width: 100%;
+    }
+    .close-button{
+        display: block;
+    }
+    
+    .flex-div{
+        flex-direction: column;
+    }
 }
 
 @media (min-width: 600px) {
     .info-section{
         width: 75%;
+    }
+    .d-responsive{
+        display: none;
+    }
+    .burger-menu{
+        display: flex;
+    }
+    
+    .flex-div{
+        flex-direction: column;
+    }
+    .close-button{
+        display: none;
     }
 }
 
@@ -56,13 +118,50 @@
     .info-section{
         width: 65%;
     }
+    .logo-container{
+        width: 40%;    
+    }
+    .menu-container{
+        width: 60%;
+    }
+    .d-responsive{
+        position: relative;
+        display: flex;
+    }  
+    .burger-menu{
+        display: none;
+    }
+    .inge-logo{
+        width: 85%;
+    }
+    
+    .flex-div{
+        flex-direction: row;
+    }
 }
 
 @media (min-width: 1000px) {
     .info-section{
         width: 60%;
     }
+    .logo-container{
+        width: 40%;    
+    }
+    .menu-container{
+        width: 60%;
+    }
+    .d-responsive{
+        display: flex;
+    }
+    .burger-menu{
+        display: none;
+    }
+    
+    .flex-div{
+        flex-direction: row;
+    }
 }
+
 /*
     https://www.youtube.com/watch?v=1ukG4FTmdWQ
 */

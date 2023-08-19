@@ -1,0 +1,160 @@
+import React from 'react'
+
+const FC_6x7 = () => {
+  return (
+    <>
+    <table className="table table-primary">
+        <tbody>
+<tr>
+    <td>
+        <p>&empty;</p>
+        <p>(m.m)</p>
+    </td>
+    <td>
+        <p>Peso 100 m</p>
+        <p>(Kg/m)</p>
+    </td>
+    <td>
+        <p>Carga ** rotura</p>
+        <p>Min. (kg) 1.570 N/mm2</p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>1</p>
+    </td>
+    <td>
+        <p>0.39</p>
+    </td>
+    <td>
+        <p>62</p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>1.5</p>
+    </td>
+    <td>
+        <p>0.87</p>
+    </td>
+    <td>
+        <p>139</p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>2</p>
+    </td>
+    <td>
+        <p>1.54</p>
+    </td>
+    <td>
+        <p>248</p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>2.5</p>
+    </td>
+    <td>
+        <p>2.40</p>
+    </td>
+    <td>
+        <p>388</p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>3</p>
+    </td>
+    <td>
+        <p>3.46</p>
+    </td>
+    <td>
+        <p>559</p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>4</p>
+    </td>
+    <td>
+        <p>6.14</p>
+    </td>
+    <td>
+        <p>994</p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>5</p>
+    </td>
+    <td>
+        <p>9.60</p>
+    </td>
+    <td>
+        <p>1.552</p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>6</p>
+    </td>
+    <td>
+        <p>13.80</p>
+    </td>
+    <td>
+        <p>2.235</p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>7</p>
+    </td>
+    <td>
+        <p>18.80</p>
+    </td>
+    <td>
+        <p>3.043</p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>8</p>
+    </td>
+    <td>
+        <p>24.60</p>
+    </td>
+    <td>
+        <p>3.974</p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>9</p>
+    </td>
+    <td>
+        <p>31.10</p>
+    </td>
+    <td>
+        <p>5.030</p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>10</p>
+    </td>
+    <td>
+        <p>38.40</p>
+    </td>
+    <td>
+        <p>6.210</p>
+    </td>
+</tr>
+        </tbody>
+        </table> 
+    </>
+  )
+}
+
+export default FC_6x7

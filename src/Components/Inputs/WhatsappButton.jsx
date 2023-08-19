@@ -4,7 +4,8 @@ import ws2 from "./ws2.png";
 
 const WhatsappButton = () => {
     const handleIconClick = () => {
-        window.open('http://www.wa.link/b32221'); // Abrir enlace en una nueva ventana/tab
+        // Whatsapp del "Ing" Edwin León +593 99 9667904
+        window.open('https://wa.link/f3p6uz') 
     };
   return (
     <>

@@ -1,0 +1,129 @@
+import React from 'react'
+
+const WSC6x7 = () => {
+  return (
+    <>
+    <table className="table table-striped">
+    <thead className="thead-dark">
+        <tr className="bg-dark text-light">
+            <td>
+                <span>∅</span>
+                (m.m)
+            </td>
+            <td>
+                Peso 100 m
+                (Kg/m)
+            </td>
+            <td>
+                Carga de rotura
+                Min. (kg)
+            </td>
+        </tr>
+    </thead>
+<tbody>
+            <tr>
+                <td>
+                    2
+                </td>
+                <td>
+                    1.54
+                </td>
+                <td>
+                    280
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    3
+                </td>
+                <td>
+                    3.46
+                </td>
+                <td>
+                    630
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    4
+                </td>
+                <td>
+                    6.14
+                </td>
+                <td>
+                    1.120
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    5
+                </td>
+                <td>
+                    9.60
+                </td>
+                <td>
+                    1.750
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    6
+                </td>
+                <td>
+                    13.80
+                </td>
+                <td>
+                    2.520
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    7
+                </td>
+                <td>
+                    18.80
+                </td>
+                <td>
+                    3.430
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    8
+                </td>
+                <td>
+                    24.60
+                </td>
+                <td>
+                    4.480
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    9
+                </td>
+                <td>
+                    31.10
+                </td>
+                <td>
+                    5.670
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    10
+                </td>
+                <td>
+                    38.40
+                </td>
+                <td>
+                    7.001
+                </td>
+            </tr>
+        </tbody>
+    </table> 
+    </>
+  )
+}
+
+export default WSC6x7

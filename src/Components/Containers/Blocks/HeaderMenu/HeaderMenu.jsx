@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { TiLocation } from 'react-icons/ti';
 import { GiRotaryPhone } from 'react-icons/gi';
+import { RxHamburgerMenu } from 'react-icons/rx';
 import { FaGlobeAmericas } from 'react-icons/fa';
 import { Link } from "react-router-dom";
 import logo from "../../../../Media/Images/logo_ingecables.png";
@@ -48,6 +49,8 @@ const ModalPanel = ({handleContact, contactData}) => {
 const HeaderMenu = () => {
     const { currentPage } = usePage();
     const [activeContact, setActiveContact] = useState(false)
+    const [responsiveWidth, setResponsiveWidth] = useState("20%")
+    const [activeMenu, setActiveMenu] = useState("d-responsive")
     const classStyle = " d-flex justify-content-center align-items-center text-decoration-none text-center h-100 p-0 "
     const linkActive = " link-active "
     const linkInactive = " link-inactive "
@@ -72,15 +75,20 @@ const HeaderMenu = () => {
         setActiveContact(active)
     }
 
+    function handleMenu(style) {
+        setActiveMenu(style)
+        style !== "d-mob-responsive" ? setResponsiveWidth("20%") : setResponsiveWidth("80%")
+    }
+
   return (
     <>
         {
             activeContact ? (<ModalPanel handleContact={handleContact} contactData={contactData} />) : (<></>)
         }
-        <div className='logo-container d-flex' >
-                <div className="w-100 d-flex justify-content-center p-2">
-                    <Link to="/" className='text-center w-100 m-0 p-2'>
-                        <img className="" src={logo} width="85%" alt=""/>
+        <nav className='logo-container d-flex flex-div'>
+                <div className="w-70 d-flex justify-content-center p-2">
+                    <Link to="/" className='d-flex justify-content-center align-items-center w-100 m-0 p-2'>
+                        <img className="inge-logo" src={logo} height="80%" alt=""/>
                     </Link>
                 </div>
                 <div className="d-flex text-center justify-content-center align-items-center fw-bold" style={{ width: "50% !important", fontPosition: "14px" }}>
@@ -89,7 +97,7 @@ const HeaderMenu = () => {
                             <div className=" p-1 d-flex justify-content-center align-items-center">
                                 <GiRotaryPhone className=''/>
                             </div>
-                            <div className=" d-flex justify-content-center align-items-center fs-6">
+                            <div className="d-flex justify-content-center align-items-center fs-6">
                                 +593 2 2257589
                             </div>
                         </div>
@@ -102,22 +110,31 @@ const HeaderMenu = () => {
                             </div>
                         </div>
                     </div>
-            </div >        
-        </div>
+            </div >
+        </nav>
         <div className='menu-container d-flex'>
-            <div className='w-100 d-flex h-100'>
-                <div className="w-100 d-flex align-items-center justify-content-around">
+            <div className='w-100 d-flex h-100 '>
+                <div onClick={()=> handleMenu("d-mob-responsive")} className="burger-menu w-100 align-items-center p-1">
+                    <RxHamburgerMenu className='w-100 p-2 h-90 rounded bg-light shadow shadow-strong-2' style={{ fontSize: "2.5em", border: "darkgray 1px solid" }}/>
+                </div>
+                <div className={"w-100 align-items-center justify-content-around " + activeMenu}>
                    {
                     menuButtonsData.map( (buttonData, index) =>
-                        <section key={index} className={ currentPage === buttonData.endpoint ? optionActive : optionInactive } style={{ width: "20%" }}>
-                            <Link className = {classStyle + (currentPage === buttonData.endpoint ? linkActive : linkInactive)} to = { buttonData.endpoint } relative="path">
+                        <section key={index} className={ currentPage === buttonData.endpoint ? optionActive : optionInactive } style={{ width: responsiveWidth }}>
+                            <Link onClick={()=> handleMenu("d-responsive")} className = {classStyle + (currentPage === buttonData.endpoint ? linkActive : linkInactive)} to = { buttonData.endpoint } relative="path">
                                 {buttonData.titleButton}
                             </Link>
                         </section>)
                     }
-                    <section className= { optionInactive }  style={{ width: "20%" }}>
+                    
+                    <section className= { optionInactive }  style={{ width: responsiveWidth }}>
                         <div onClick={()=>{handleContact(true)}} className = { classStyle + linkInactive } style={{ cursor: "pointer" }}>
                             ¡Contáctenos!
+                        </div>
+                    </section>
+                    <section className= { "close-button option-inactive-page h-50 rounded mb-3 bg-danger " }  style={{ width: "80%", boxShadow: "rgba(10,10,10,.8) 3px 3px 10px" }}>
+                        <div onClick={()=>{handleMenu("d-responsive")}} className = { classStyle + " fs-5 text-light" } style={{ cursor: "pointer" }}>
+                            CERRAR
                         </div>
                     </section>
                 </div>

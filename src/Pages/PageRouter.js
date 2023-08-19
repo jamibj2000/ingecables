@@ -21,12 +21,12 @@ const PageRouter = () => {
             <HeaderMenu />
         </div>
           <Routes>
+            {/* <Route path="*" element={<NoPage />} /> */}
             <Route path="/" element={<MainPage />} />
             <Route path="/catalogo" element={<Catalogue />} />
             <Route path="/mission" element={<Mission />} />
             <Route path="/products" element={<ProductsLink />} />
             <Route path="/products/:rutaesp" element={<Products />} />
-            <Route path="*" element={<NoPage />} />
           </Routes>
         <WhatsappButton />
         <RowContainer className="mt-3 p-2 bg-dark" >

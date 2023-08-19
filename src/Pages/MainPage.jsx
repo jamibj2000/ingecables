@@ -18,8 +18,8 @@ const MainPage = () => {
     <>
         <Carouselle />
         <hr className="bg-white"/>
-        <Services />
-        <hr className="bg-white"/>
+        {/* <Services />
+        <hr className="bg-white"/> */}
         <Introduction />
         <hr className="bg-white"/>
         <Products />

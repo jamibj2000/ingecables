@@ -5,6 +5,7 @@ import Loader from "../Tools/Loader";
 import data from './Data/Tables';
 import { useParams, useNavigate } from "react-router-dom";
 import "./products.css";
+import obj from "./ProductConstructor";
 const API_URL = "https://jamjack.online/ingecables"
 
 
@@ -14,17 +15,21 @@ const Products = () => {
     const [productsData, setProductsData] = useState([])
     const [activeProduct, setActiveProduct] = useState(false)
     const [productCode, setProductCode] = useState("")
+    const [productTitle, setProductTitle] = useState("")
+    const [productImage, setProductImage] = useState("img/cadenas-acero.webp")
 
     useEffect(() => {
         axios.get(`${API_URL}/${rutaesp}.php`)
         .then( data => {
-            console.log(data.data);
+            console.log(data.data)
             setProductsData(data.data)
         })
     }, [rutaesp])
 
-    function showProductCard(code, active = true) {
-        setProductCode(code)
+    function showProductCard(card, active = true) {
+        setProductCode(card.code)
+        setProductTitle(card.title)
+        setProductImage(card.image)
         setActiveProduct(active)
     }
 
@@ -35,39 +40,45 @@ const Products = () => {
                     return e.target.className === "panel" ? showProductCard("", false) : ""
                 }
             }  className="panel">
-                    <section className="info-products-section d-flex flex-column p-3 rounded shadow shadow-4 justify-content-center align-items-center bg-danger">
-                        <span className="d-flex w-100 bg-light justify-content-center align-items-center rounded">
-                            <h1>
-                                CARDA-INCCIO
-                            </h1>
-                        </span>
-                        <span className="bg-dark row w-100 my-2 p-1 rounded justify-content-center align-items-center" style={{ maxHeight: "500px"}}>
+                    <section className="info-products-section d-flex flex-column p-3 rounded shadow shadow-4 justify-content-center align-items-center bg-light">
+                        
+                        <span className="bg-sky row w-100 my-2 p-1 rounded justify-content-center align-items-center" style={{ maxHeight: "500px"}}>
                             <span className="col-md-4 col-sm-12 d-flex justify-content-center align-items-center overflow-hidden">
-                                <img src={`${ API_URL }/img/cadenas-acero.webp`} className="rounded" alt="" width="100%" height="200"/>
+                                <img 
+                                    src={`${ API_URL }/${productImage}`}
+                                    className="rounded border border-4 border-light"
+                                    alt="" 
+                                    width="100%" 
+                                    height="200"/>
                             </span>
                             <span className="col-md-8 col-sm-12 d-flex justify-content-center align-items-center overflow-hidden" style={{ height: "250px" }}>
-                                <div className="border border-2 rounded overflow-auto text-light p-2" style={{ height: "200px" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic necessitatibus distinctio error quae reiciendis, repellat animi illo natus optio nisi quo expedita possimus sequi dignissimos laboriosam unde fugit fugiat odio!
-                                Nostrum deleniti mollitia assumenda, veniam quis facere provident vel illum recusandae ipsa? Eveniet totam quia eos ullam, nulla officia fuga corrupti vero vitae suscipit aliquid ex. Incidunt hic rerum mollitia?
-                                At magnam modi laborum natus assumenda consequatur eos quidem quam voluptas adipisci sunt nisi nemo quibusdam minima impedit nulla cumque facere sapiente error, aliquam suscipit id doloribus minus magni. Consectetur.</div>
-                            </span>
-                            <span className=" text-light d-flex">
-                                { data[productCode]?.body ? data[productCode].body : ""}
+                                <div className=" border-light rounded overflow-auto text-light p-2" style={{ height: "200px" }}>
+                                    <span className="" style={{ fontSize: "2rem", fontWeight: "bold" }}>
+                                        {productTitle !== "" ? productTitle : "NO DATA"}
+                                    </span>
+                                    <hr className="border border-light p-2 bg-light"/>                        
+                                </div>
                             </span>
                         </span>
-                        <button className="shadow shadow-2 btn btn-danger rounded w-25 mt-2" onClick={()=> showProductCard("", false)}>CERRAR</button>
+                        <span className="p-2 d-flex w-100 bg-light justify-content-center border border-1 rounded overflow-auto" style={{ top: '0', height: "20rem" }}>
+                            {obj[productCode] ? obj[productCode] : "NO DATA"}
+                        </span>
+                        {/* <span dangerouslySetInnerHTML={{__html: data[productCode]?.body}} className="p-2 d-flex w-100 bg-light justify-content-center border border-1 rounded overflow-auto" style={{ top: '0', height: "20rem" }}>
+                        </span> */}
+                        <button style={{ boxShadow: "rgba(0, 0, 0, .5) 3px 3px 10px" }} className="btn btn-danger rounded w-50 mt-2" onClick={()=> showProductCard("", false)}>CERRAR</button>
                     </section>
                 </div>
             )
         }
         <ProductsSectioned>
-            <div className='rounded w-100 bg-secondary row'>
+            <div className='rounded justify-content-center w-100 bg-secondary row'>
             {   productsData.length <= 0 ? <Loader /> :
                 productsData.map( (card, index) => (
                     <div key={index} className={`bg-light rounded p-2 col-md-2 col-sm-3 m-1 shadow shadow-3`} >
                         <section className='card-image-container'>
                             <img draggable="false" src = {`${API_URL}/${card.image}`} className="card-image" alt="Carta 1" />
                         </section>
-                        <div onClick={() => showProductCard(card.code)} className='card-button' style={{ bottom: "0" }}>
+                        <div onClick={() => showProductCard(card)} className='card-button' style={{ bottom: "0" }}>
                             {card.buttonTitle}
                         </div>
                     </div>

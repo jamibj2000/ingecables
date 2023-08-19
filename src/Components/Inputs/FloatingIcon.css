@@ -7,7 +7,7 @@
     left: 95%;
     top: 95%;
     filter: saturate(250%);
-    z-index: 9;
+    z-index: 8;
     cursor: pointer;
     box-shadow: rgba(63, 60, 60, 0.603) 2px 5px 5px 5px;
     transition: .1s ease-in filter;
@@ -24,43 +24,43 @@
 
 @media (min-width: 280px) {
     .floating-icon{
-        width: 30px;
-        height: 30px;
+        width: 45px;
+        height: 45px;
         left: 80%;
         top: 85%;
-    } 
+    }
 
     .floating-icon .image-container{
-        width: 25px;
-        height: 25px;
+        width: 40px;
+        height: 40px;
     }
 }
 
 @media (min-width: 600px) {
     .floating-icon{
-        width: 40px;
-        height: 40px;
+        width: 55px;
+        height: 55px;
         left: 90%;
         top: 85%;
     } 
 
     .floating-icon .image-container{
-        width: 35px;
-        height: 35px;
-    } 
+        width: 45px;
+        height: 45px;
+    }
 }
 
 @media (min-width: 800px) {
     .floating-icon{
-        width: 55px;
-        height: 55px;
+        width: 65px;
+        height: 65px;
         left: 80%;
         top: 85%;
     } 
 
     .floating-icon .image-container{
-        width: 50px;
-        height: 50px;
+        width: 55px;
+        height: 55px;
     }
 }
 

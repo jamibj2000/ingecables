@@ -1,0 +1,127 @@
+import React from 'react'
+
+const FCalmatextil6x19M = () => {
+  return (
+    <>
+    <table className="table table-primary">
+        <tbody>
+<tr>
+    <td>
+        <p>&empty;</p>
+        <p>(m.m)</p>
+    </td>
+    <td>
+        <p>Peso 100 m</p>
+        <p>(Kg/m)</p>
+    </td>
+    <td>
+        <p>Carga de rotura</p>
+        <p>Min. (kg)</p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>2</p>
+    </td>
+    <td>
+        <p>1.54</p>
+    </td>
+    <td>
+        <p>280</p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>3</p>
+    </td>
+    <td>
+        <p>3.46</p>
+    </td>
+    <td>
+        <p>630</p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>4</p>
+    </td>
+    <td>
+        <p>6.14</p>
+    </td>
+    <td>
+        <p>1.120</p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>5</p>
+    </td>
+    <td>
+        <p>9.60</p>
+    </td>
+    <td>
+        <p>1.750</p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>6</p>
+    </td>
+    <td>
+        <p>13.80</p>
+    </td>
+    <td>
+        <p>2.520</p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>7</p>
+    </td>
+    <td>
+        <p>18.80</p>
+    </td>
+    <td>
+        <p>3.430</p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>8</p>
+    </td>
+    <td>
+        <p>24.60</p>
+    </td>
+    <td>
+        <p>4.480</p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>9</p>
+    </td>
+    <td>
+        <p>31.10</p>
+    </td>
+    <td>
+        <p>5.670</p>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>10</p>
+    </td>
+    <td>
+        <p>38.40</p>
+    </td>
+    <td>
+        <p>7.001</p>
+    </td>
+</tr>
+        </tbody>
+        </table> 
+    </>
+  )
+}
+
+export default FCalmatextil6x19M
