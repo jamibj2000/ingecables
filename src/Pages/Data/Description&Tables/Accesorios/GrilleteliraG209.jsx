@@ -1,0 +1,216 @@
+import React from 'react'
+
+const GrilleteliraG209 = () => {
+  return (
+    <>
+    <table class="table table-striped">
+          <thead class="thead-dark">
+            <tr class="bg-dark">
+                <td class="text-light w-25 text-center">
+                    <p>Fuerza máxima de utilización WLL</p>
+                    <p>ton</p>
+                </td>
+                <td class="text-light w-25 text-center">
+                    <p>Dimensión (plg.)</p>
+                </td>
+                <td class="text-light w-25 text-center">
+                    <p>Peso</p>
+                    <p>(kg)</p>
+                </td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+            <td>
+                <p>0,33</p>
+            </td>
+            <td>
+                <p>3/16</p>
+            </td>
+            <td>
+                <p>0,03</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>0,5</p>
+            </td>
+            <td>
+                <p>1/4</p>
+            </td>
+            <td>
+                <p>0,05</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>0,75</p>
+            </td>
+            <td>
+                <p>5/16</p>
+            </td>
+            <td>
+                <p>0,09</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>1</p>
+            </td>
+            <td>
+                <p>3/8</p>
+            </td>
+            <td>
+                <p>0,14</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>1,5</p>
+            </td>
+            <td>
+                <p>7/16</p>
+            </td>
+            <td>
+                <p>0,17</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>2</p>
+            </td>
+            <td>
+                <p>1/2</p>
+            </td>
+            <td>
+                <p>0,33</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>3,25</p>
+            </td>
+            <td>
+                <p>5/8</p>
+            </td>
+            <td>
+                <p>0,62</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>4,75</p>
+            </td>
+            <td>
+                <p>3/4</p>
+            </td>
+            <td>
+                <p>1,07</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>6,5</p>
+            </td>
+            <td>
+                <p>7/8</p>
+            </td>
+            <td>
+                <p>1,64</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>8,5</p>
+            </td>
+            <td>
+                <p>1</p>
+            </td>
+            <td>
+                <p>2,28</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>9,5</p>
+            </td>
+            <td>
+                <p>1 1/8</p>
+            </td>
+            <td>
+                <p>3,36</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>12</p>
+            </td>
+            <td>
+                <p>1 1/4</p>
+            </td>
+            <td>
+                <p>4,31</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>13,5</p>
+            </td>
+            <td>
+                <p>1 3/8</p>
+            </td>
+            <td>
+                <p>6,14</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>17</p>
+            </td>
+            <td>
+                <p>1 1/2</p>
+            </td>
+            <td>
+                <p>7,8</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>25</p>
+            </td>
+            <td>
+                <p>1 3/4</p>
+            </td>
+            <td>
+                <p>12,6</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>35</p>
+            </td>
+            <td>
+                <p>2</p>
+            </td>
+            <td>
+                <p>20,4</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>55</p>
+            </td>
+            <td>
+                <p>2 1/2</p>
+            </td>
+            <td>
+                <p>38,9</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+    </>
+  )
+}
+
+export default GrilleteliraG209

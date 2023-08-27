@@ -53,12 +53,12 @@ const ProductsLink = () => {
                     <section className='card-image-container'>
                         <img draggable="false" src = {`${_URL_}${card.image}`} className="card-image" alt="Carta 1" />
                     </section>
-                    <button onClick={handleOnConstruction} className='btn btn-primary text-center card-button'>
+                    {/* <button onClick={handleOnConstruction} className='btn btn-primary text-center card-button'>
                       {card.name}
-                    </button>
-                    {/* <Link to={`/products${card.endpoint}`} className='btn btn-primary text-center card-button'>
+                    </button> */}
+                    <Link to={`/products${card.endpoint}`} className='btn btn-primary text-center card-button'>
                       {card.name}
-                    </Link> */}
+                    </Link>
                 </div>
             ) )
         }

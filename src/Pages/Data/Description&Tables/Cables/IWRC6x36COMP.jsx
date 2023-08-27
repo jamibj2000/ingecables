@@ -1,0 +1,174 @@
+import React from 'react'
+
+const IWRC8x36WS = () => {
+  return (
+    <>
+    <table className="table table-striped">
+        <thead className="thead-dark">
+            <tr className="bg-dark text-light">
+                <td>
+                    <p>&empty;</p>
+                    <p>(mm)</p>
+                </td>
+                <td>
+                    <p>**** 100 m</p>
+                    <p>&nbsp;(kg)</p>
+                </td>
+                <td>
+                    <p>&nbsp;Carga de rotura</p>
+                    <p>&nbsp;min, (kg) 1.770 N/mm<sup>2</sup></p>
+                </td>
+                <td>
+                    <p>&nbsp;Carga ** rotura</p>
+                    <p>&nbsp;min, (kg) 1.960 N/mm<sup>2</sup></p>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+    <tr>
+        <td>
+            <p>16</p>
+        </td>
+        <td>
+            <p>107,00</p>
+        </td>
+        <td>
+            <p>15.400</p>
+        </td>
+        <td>
+            <p>18.300</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>18</p>
+        </td>
+        <td>
+            <p>135,00</p>
+        </td>
+        <td>
+            <p>20.800</p>
+        </td>
+        <td>
+            <p>23.000</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>20</p>
+        </td>
+        <td>
+            <p>167,00</p>
+        </td>
+        <td>
+            <p>25.700</p>
+        </td>
+        <td>
+            <p>28.500</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>22</p>
+        </td>
+        <td>
+            <p>202,00</p>
+        </td>
+        <td>
+            <p>31.100</p>
+        </td>
+        <td>
+            <p>34.500</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>24</p>
+        </td>
+        <td>
+            <p>240,00</p>
+        </td>
+        <td>
+            <p>37.000</p>
+        </td>
+        <td>
+            <p>41.000</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>26</p>
+        </td>
+        <td>
+            <p>282,00</p>
+        </td>
+        <td>
+            <p>43.400</p>
+        </td>
+        <td>
+            <p>48.100</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>28</p>
+        </td>
+        <td>
+            <p>327,00</p>
+        </td>
+        <td>
+            <p>50.400</p>
+        </td>
+        <td>
+            <p>55.800</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>32</p>
+        </td>
+        <td>
+            <p>427,00</p>
+        </td>
+        <td>
+            <p>65.800</p>
+        </td>
+        <td>
+            <p>72.900</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>36</p>
+        </td>
+        <td>
+            <p>540,00</p>
+        </td>
+        <td>
+            <p>83.300</p>
+        </td>
+        <td>
+            <p>92.200</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>40</p>
+        </td>
+        <td>
+            <p>667,00</p>
+        </td>
+        <td>
+            <p>103.000</p>
+        </td>
+        <td>
+            <p>114.000</p>
+        </td>
+    </tr>
+</tbody>
+</table>  
+    </>
+  )
+}
+
+export default IWRC8x36WS

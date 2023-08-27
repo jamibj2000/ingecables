@@ -1,6 +1,6 @@
 import React from 'react'
 
-const FC_6x7 = () => {
+const FC26x7 = () => {
   return (
     <>
     <table className="table table-primary">
@@ -157,4 +157,4 @@ const FC_6x7 = () => {
   )
 }
 
-export default FC_6x7
+export default FC26x7

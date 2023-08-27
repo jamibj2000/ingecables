@@ -3,8 +3,9 @@ import HeroSlider, { Overlay, Slide, MenuNav } from "hero-slider";
 // import Title from "./CarouselleComponents/Title/Index";
 // import Subtitle from "./CarouselleComponents/Subtitle/Index";
 
+import bridge from "./Images/carousel/bridge.jpg";
 import bogliasco from "./Images/c5dbbf60596666f3e5f3636be3b8d8d5.emcocables-slider-3.webp";
-import countyClare from "./Images/cz05100-01-thumbnail-1080x1080-70.jpg";
+import countyClare from "./Images/carousel/cableacero.png";
 import craterRock from "./Images/carousel/obreros.png";
 import giauPass from "./Images/carousel/teclesmanuales.png";
 import ingecables from "./Images/carousel/winchaEle.png";
@@ -67,10 +68,16 @@ export default function Carouselle() {
         // shouldRenderMask
         label=""
         background={{
+          backgroundImageSrc: bridge
+        }}
+      />
+
+      <Slide
+        // shouldRenderMask
+        label=""
+        background={{
           backgroundImageSrc: giauPass
         }}
-
-        
       />
 
       <Slide
@@ -108,33 +115,3 @@ export default function Carouselle() {
     </HeroSlider>
   );
 }
-
-
-
-// import BasicSlider from "./components/BasicSlider/BasicSlider";
-// import VerticalSlider from "./components/VerticalSlider/VerticalSlider";
-// import ZoomSlider from "./components/ZoomSlider/ZoomSlider";
-// import SlidesChildrenSlider from "./components/SlidesChildrenSlider/SlidesChildrenSlider";
-// import BlendModeSlider from "./components/BlendModeSlider/BlendModeSlider";
-// import NavbarSlider from "./components/NavbarSlider/NavbarSlider";
-// import ButtonsSlider from "./components/ButtonsSlider/ButtonsSlider";
-// import AutoplayButtonSlider from "./components/AutoplayButtonSlider/AutoplayButtonSlider";
-
-// export Cx = () => {
-//   return (
-//     <div
-//       style={{
-//         color: "#FFF"
-//       }}
-//     >
-//       <BasicSlider />
-//       <VerticalSlider />
-//       <ZoomSlider />
-//       <SlidesChildrenSlider />
-//       <BlendModeSlider />
-//       <NavbarSlider />
-//       <ButtonsSlider />
-//       <AutoplayButtonSlider />
-//     </div>
-//   );
-// };

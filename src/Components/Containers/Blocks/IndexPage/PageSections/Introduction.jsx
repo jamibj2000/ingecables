@@ -61,13 +61,18 @@ const Intro = () => {
 
             <div className="container-fluid border w-100 d-flex justify-content-center shadow-lg shadow p-3 rounded">
                 <div>
-                <span className='d-flex align-items-center justify-content-center p-2 mb-3 rounded bg-light' style={{ boxShadow: "3px 3px 10px rgba(0,0,0, .54)" }}>
+                {/* <span className='d-flex align-items-center justify-content-center p-2 mb-3 rounded bg-light' style={{ boxShadow: "3px 3px 10px rgba(0,0,0, .54)" }}>
                     <h1 className='text-center'>
                         <span className=' text-primary rounded '>
                             <img src={logo} alt="" className='w-75' />
                         </span>
                     </h1>
-                </span>
+                </span> */}
+                    <span className='d-flex flex-column justify-content-center align-items-center bg-primary p-3 rounded'>
+                        <h1 className='p-2 fw-bold text-white'>¡Desde la planificación hasta los materiales!</h1>
+                        <span className='w-75 p-3 fw-bold text-light  rounded text-justify '><p>Infraestructura de punta más personal altamente calificado sumados a los mejores materiales disponibles en le mercado garantiza a nuestros clientes total confiabilidad aún en los proyectos más complejos. Cuando no hay margen de error Ingecables es su mejor opción.</p></span>
+                        <hr className='border border-light w-75'/>
+                    </span>
                 </div>
             </div>
             <section className='row p-2 '>

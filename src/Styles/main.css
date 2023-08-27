@@ -126,8 +126,8 @@
   overflow: hidden;
   transition: .2s ease-out all;
   left: 50%;
-  transform: translate(-50%, -50%);
   width: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .inner-container-card{
@@ -135,7 +135,7 @@
 }
 
 .contact-logo{
-  width: 40%;  
+  width: 40%;
 }
 
 @media (min-width: 250px) {

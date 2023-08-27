@@ -97,7 +97,7 @@ const HeaderMenu = () => {
                             <div className=" p-1 d-flex justify-content-center align-items-center">
                                 <GiRotaryPhone className=''/>
                             </div>
-                            <div className="d-flex justify-content-center align-items-center fs-6">
+                            <div className="d-flex justify-content-center align-items-center " style={{ fontSize:".8em" }}>
                                 +593 2 2257589
                             </div>
                         </div>

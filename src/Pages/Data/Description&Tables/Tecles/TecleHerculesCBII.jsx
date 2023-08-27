@@ -1,0 +1,176 @@
+import React from 'react'
+
+const TecleHérculesCBII = () => {
+  return (
+    <>
+    <table>
+      <thead>
+          <tr>
+            <td>Modelo</td>
+            <td>Código</td>
+            <td>Capacidad (ton)	</td>
+            <td>Altura de elevación (m)	</td>
+            <td>Carga de Prueba (ton)	</td>
+            <td>Recorrido de Avance por min (mm)</td>
+            <td>Esfuerzo requerido para levantar (kg)	</td>
+            <td>Ramales de Cadena de Carga</td>
+            <td>Diámetro Cadena de Carga (mm)	</td>
+            <td>Dimensiones (mm)
+              <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+              </tr>
+            </td>
+            <td>Peso Neto (kg)</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>5</td>
+            <td>130904010</td>
+            <td>0.5</td>
+            <td>3</td>
+            <td>0.75</td>
+            <td>255</td>
+            <td>22</td>
+            <td>1</td>
+            <td>6</td>
+            <td>
+              <tr>
+                <td>125</td>
+                <td>111</td>
+                <td>24</td>
+                <td>134</td>
+              </tr>
+            </td>
+            <td>8.95</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>130904011</td>
+            <td>1</td>
+            <td>3</td>
+            <td>1.5</td>
+            <td>306</td>
+            <td>31</td>
+            <td>1</td>
+            <td>6</td>
+            <td>
+              <tr>
+                <td>147</td>
+                <td>126</td>
+                <td>28</td>
+                <td>154</td>
+              </tr>
+            </td>
+            <td>11.2</td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>130904012</td>
+            <td>2</td>
+            <td>3</td>
+            <td>3</td>
+            <td>396</td>
+            <td>30</td>
+            <td>1</td>
+            <td>8</td>
+            <td>
+              <tr>
+                <td>215</td>
+                <td>163</td>
+                <td>38</td>
+                <td>224</td>
+              </tr>
+            </td>
+            <td>18.5</td>
+          </tr>
+          <tr>
+            <td>30</td>
+            <td>130904013</td>
+            <td>3</td>
+            <td>3</td>
+            <td>4.5</td>
+            <td>486</td>
+            <td>35</td>
+            <td>2</td>
+            <td>8</td>
+            <td>
+              <tr>
+                <td>183</td>
+                <td>141</td>
+                <td>38</td>
+                <td>192</td>
+              </tr>
+            </td>
+            <td>27</td>
+          </tr>
+          <tr>
+            <td>50</td>
+            <td>130904014</td>
+            <td>5</td>
+            <td>3</td>
+            <td>7.5</td>
+            <td>616</td>
+            <td>39</td>
+            <td>2</td>
+            <td>10</td>
+            <td>
+              <tr>
+                <td>215</td>
+                <td>163</td>
+                <td>48</td>
+                <td>U4</td>
+              </tr>
+            </td>
+            <td>42</td>
+          </tr>
+          <tr>
+            <td>100</td>
+            <td>130904015</td>
+            <td>10</td>
+            <td>3</td>
+            <td>15</td>
+            <td>700</td>
+            <td>41</td>
+            <td>4</td>
+            <td>10</td>
+            <td>
+              <tr>
+                <td>360</td>
+                <td>163</td>
+                <td>64</td>
+                <td>224</td>
+              </tr>
+            </td>
+            <td>83</td>
+          </tr>
+          <tr>
+            <td>200</td>
+            <td>130904025</td>
+            <td>20</td>
+            <td>5</td>
+            <td>30</td>
+            <td>1000</td>
+            <td>41 X 2</td>
+            <td>8</td>
+            <td>10</td>
+            <td>
+              <tr>
+                <td>585</td>
+                <td>191</td>
+                <td>82</td>
+                <td>224</td>
+              </tr>
+            </td>
+            <td>197.4</td>
+          </tr>
+        </tbody>
+      </table>
+    </>
+  )
+}
+
+export default TecleHérculesCBII

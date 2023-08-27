@@ -17,21 +17,21 @@ const Footer = () => {
                 <div className="col-md-4 col-sm-12 align-items-center bg-light" style={{ borderRight: "solid 1px rgba(0, 0, 20, 0.2)" }}>
                     <span className="d-flex justify-content-center align-items-center w-100  flex-column h-100 p-2">
                         <span className='w-100 d-flex justify-content-center shadow shadow-2 mb-0 '>
-                            <h3 className='text-dark w-100 text-center rounded p-3 mb-0 border border-bottom'>
+                            {/* <h3 className='text-dark w-100 text-center rounded p-3 mb-0 border border-bottom'>
                                 <img src={logo} alt="" className='w-75' />
-                            </h3>
+                            </h3> */}
                         </span>
-                        <hr className='border border-2 border-bottom border-secondary w-100' />
-                        <span className='d-flex justify-content-around bg-primary text-dark w-100 p-3 shadow border border-bottom shadow-3 rounded '>
-                            <BsTwitter className='bg-light border border-bottom border-2 shadow shadow-1 rounded p-1 fs-1'/>
+                        {/* <hr className='border border-2 border-bottom border-secondary w-100' /> */}
+                        <span className='d-flex justify-content-around bg-white text-dark w-100 p-3 shadow border border-bottom shadow-3 rounded '>
+                            {/* <BsTwitter className='bg-light border border-bottom border-2 shadow shadow-1 rounded p-1 fs-1'/>
                             <BsInstagram className='bg-light border border-bottom border-2 shadow shadow-1 rounded p-1 fs-1'/>
-                            <BsFacebook className='bg-light border border-bottom border-2 shadow shadow-1 rounded p-1 fs-1'/>
+                            <BsFacebook className='bg-light border border-bottom border-2 shadow shadow-1 rounded p-1 fs-1'/> */}
                         </span>
                     </span>
                 </div>
                 <div className="col-md-4 col-sm-12 bg-light" >
                     <div className="d-flex justify-content-center align-items-center flex-column h-100 w-100 ">
-                        <span className='shadow shadow-2 d-flex justify-content-center align-items-start flex-column h-100 w-75 text-light py-3 px-3'>
+                        <span className='shadow shadow-2 d-flex justify-content-center align-items-start flex-column h-100 w-90 text-light py-3 px-3'>
 
                             <span className='border d-flex justify-content-center  border-bottom rounded w-100 p-2 bg-light text-dark my-3 shadow shadow-2 '>
                                 <span style={{ minWidth: "40%" }} className='  d-flex justify-content-around align-items-center'>
@@ -64,11 +64,10 @@ const Footer = () => {
             </section>
 
             <section className="container-fluid mt-3 bg-primary text-light p-3 rounded">
-                    Ingecables S.A © {year} - Desarrollado por:
-                . <span className='text-warning'>
+                <span className='mx-2'>Ingecables S.A © {year} - Desarrollado por: </span>
+                <span className='text-sunlight'>
                     Zultech
-                </span>
-                
+                </span>                
             </section>
         </div>
     </>

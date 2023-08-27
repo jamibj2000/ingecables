@@ -6,7 +6,7 @@
     },
     {
         "name": "Cadenas",
-        "endpoint": "/index",
+        "endpoint": "/cadenas",
         "image": "img/cadenas-acero.webp"
     },
     {
@@ -15,29 +15,14 @@
         "image": "img/ACCESORIOS.jpg"
     },
     {
-        "name": "Mangueras hidráulicas",
-        "endpoint": "/mangueras",
-        "image": "img/mnguerash.jpg"
-    },
-    {
-        "name": "Productos de seguridad",
-        "endpoint": "/seguridad",
-        "image": "img/seguridad.jpg"
-    },
-    {
-        "name": "Pernos especiales",
-        "endpoint": "/pernos",
-        "image": "img/pern.png"
-    },
-    {
         "name": "Tecles",
         "endpoint": "/tecles",
         "image": "img/tecle-electrico.jpg"
     },
     {
-        "name": "Eslingas",
-        "endpoint": "/eslingas",
-        "image": "img/eslingas-poliester-csbeaver.jpg"
+        "name": "Productos de seguridad",
+        "endpoint": "/seguridad",
+        "image": "img/seguridad.jpg"
     },
     {
         "name": "Pastecas",
